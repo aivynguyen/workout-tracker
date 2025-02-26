@@ -1,45 +1,99 @@
-.app {
+/* 🔴 General Styles for All Screens */
+.exercise-screen {
   text-align: center;
-  font-family: Arial, sans-serif;
+  padding: 30px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #b83939, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu h2 {
+/* 🔙 Back Button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+/* 🏋️‍♀️ Exercise Title */
+.exercise-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
   margin-bottom: 20px;
 }
 
-.exercise-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-button {
-  padding: 10px;
-  font-size: 18px;
-  cursor: pointer;
-  background: linear-gradient(to bottom, #b83939, #ffffff);
-  border: none;
-  border-radius: 8px;
-}
-
-.exercise-screen {
+/* 🔢 RepetitionExercise (Push-Ups, Planks) */
+.rep-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  width: 80%;
   text-align: center;
 }
 
-.counter {
+.rep-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b83939;
+}
+
+.rep-counter {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 24px;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
 }
 
-.timer {
-  font-size: 24px;
-}
-
-.back-button {
-  background: none;
-  border: none;
-  font-size: 18px;
+.rep-btn {
+  font-size: 32px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 8px;
   cursor: pointer;
+  border: none;
+  background: #b83939;
+  color: white;
+}
+
+/* ⏳ DurationExercise (Timer-Based Activities) */
+.timer-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 15px;
+  width: 80%;
+  text-align: center;
+}
+
+.timer-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: #b83939;
+}
+
+.timer-display {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.timer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.timer-btn {
+  font-size: 18px;
+  padding: 12px 
 }

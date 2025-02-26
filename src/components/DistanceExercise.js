@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Exercise.css";
 
 function DistanceExercise({ name, onBack }) {
   const [distance, setDistance] = useState(0.0); // Track distance in miles/km
