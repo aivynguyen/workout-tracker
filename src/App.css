@@ -1,16 +1,59 @@
-/* 🔴 General Styles for All Screens */
-.exercise-screen {
+.app {
   text-align: center;
-  padding: 30px;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #b83939, #ffffff);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* 🔙 Back Button */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.menu {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  justify-content: center;
+}
+
+.exercise-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.exercise-card:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
 .back-button {
   position: absolute;
   top: 20px;
@@ -19,30 +62,22 @@
   border: none;
   background: none;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 
-/* 🏋️‍♀️ Exercise Title */
-.exercise-title {
-  font-size: 28px;
-  font-weight: bold;
-  color: white;
-  margin-bottom: 20px;
-}
-
-/* 🔢 RepetitionExercise (Push-Ups, Planks) */
 .rep-container {
   background: rgba(255, 255, 255, 0.9);
   padding: 25px;
   border-radius: 15px;
   width: 80%;
   text-align: center;
+  margin-top: 30px;
 }
 
 .rep-label {
   font-size: 20px;
   font-weight: bold;
-  color: #b83939;
+  color: black;
 }
 
 .rep-counter {
@@ -61,23 +96,34 @@
   border-radius: 8px;
   cursor: pointer;
   border: none;
-  background: #b83939;
+  background: black;
   color: white;
 }
 
-/* ⏳ DurationExercise (Timer-Based Activities) */
+.reset-btn {
+  margin-top: 20px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
 .timer-container {
   background: rgba(255, 255, 255, 0.9);
   padding: 25px;
   border-radius: 15px;
   width: 80%;
   text-align: center;
+  margin-top: 30px;
 }
 
 .timer-label {
   font-size: 20px;
   font-weight: bold;
-  color: #b83939;
+  color: black;
 }
 
 .timer-display {
@@ -95,5 +141,70 @@
 
 .timer-btn {
   font-size: 18px;
-  padding: 12px 
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.start-btn {
+  background-color: green;
+}
+
+.pause-btn {
+  background-color: orange;
+}
+
+.reset-btn {
+  background-color: red;
+}
+
+.distance-container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  width: 80%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.distance-label {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.distance-display {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.distance-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.distance-btn {
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.start-btn {
+  background-color: green;
+}
+
+.stop-btn {
+  background-color: orange;
+}
+
+.reset-btn {
+  background-color: red;
 }
