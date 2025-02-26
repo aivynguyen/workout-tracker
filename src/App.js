@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import RepetitionExercise from "./components/RepetitionExercise";
 import DurationExercise from "./components/DurationExercise";
+import DistanceExercise from "./components/DistanceExercise"; 
 import "./App.css";
 
 const exercises = [
   { name: "Push Ups", type: "repetition" },
   { name: "Running", type: "duration" },
   { name: "Planks", type: "repetition" },
+  { name: "Cycling", type: "distance "},
 ];
 
 function App() {
